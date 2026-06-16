@@ -15,9 +15,13 @@
       <change afterPath="$PROJECT_DIR$/modules/ibt_converter/libs/telemetry_math/README.md" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/modules/ibt_converter/libs/telemetry_math/package.json" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/modules/ibt_converter/libs/telemetry_math/src/math.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/modules/strategy_solver/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/modules/strategy_solver/js/maths.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/modules/strategy_solver/main.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/modules/strategy_solver/styles.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/modules/ibt_converter/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/modules/ibt_converter/main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/ibt_converter/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/modules/ibt_converter/styles.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/pace_visualizer/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/modules/pace_visualizer/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,7 +63,7 @@
     &quot;codeWithMe.voiceChat.enabledByDefault&quot;: &quot;false&quot;,
     &quot;git-widget-placeholder&quot;: &quot;main&quot;,
     &quot;javascript.preferred.runtime.type.id&quot;: &quot;node&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/home/michel/Desktop/projects/iracing_telemetry_viewer/telem_tools&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/michel/Desktop/projects/iracing_telemetry_viewer/telem_tools/modules&quot;,
     &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
@@ -67,6 +71,7 @@
 }</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/modules" />
       <recent name="$PROJECT_DIR$" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
@@ -88,7 +93,7 @@
       <option name="presentableId" value="Default" />
       <updated>1781561859294</updated>
       <workItem from="1781561861106" duration="6074000" />
-      <workItem from="1781604289414" duration="8532000" />
+      <workItem from="1781604289414" duration="11803000" />
     </task>
     <servers />
   </component>

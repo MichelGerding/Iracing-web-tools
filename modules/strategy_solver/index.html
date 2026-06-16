@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IBT Extractor - Degradation Analysis</title>
+    <link rel="stylesheet" href="../../stylesheets/lib.css">
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+<header>
+    <div>
+        <h1>Pace visualizer</h1>
+        <span>Extract pace degradation over time from G61 session exports</span>
+    </div>
+</header>
+<main>
+    <aside class="sidebar">
+        <div class="input-group">
+            <p class="section-label">Strategy</p>
+
+            <div class="field">
+                <label class="field-label" for="laps-per-tank">Laps per tank</label>
+                <input class="field-input" type="number" id="laps-per-tank" placeholder="30">
+            </div>
+
+            <div class="field">
+                <label class="field-label" for="pitstop-count">Pit stops</label>
+                <input class="field-input" type="number" id="pitstop-count" placeholder="2">
+            </div>
+
+            <div class="field">
+                <label class="field-label" for="base-pit-cost">Base pit cost <span class="field-unit">s</span></label>
+                <input class="field-input" type="number" id="base-pit-cost" placeholder="25.0" step="0.1">
+            </div>
+
+            <div class="field">
+                <label class="field-label" for="tire-time-loss">Tire change cost <span class="field-unit">s</span></label>
+                <input class="field-input" type="number" id="tire-time-loss" placeholder="3.0" step="0.1">
+            </div>
+        </div>
+
+        <div class="input-group">
+            <p class="section-label">Pace</p>
+
+            <div class="field">
+                <label class="field-label" for="race-duration">Race duration <span class="field-unit">min</span></label>
+                <input class="field-input" type="number" id="race-duration" placeholder="60">
+            </div>
+
+            <div class="field">
+                <label class="field-label" for="mean-lap-time">Mean lap time <span class="field-unit">s</span></label>
+                <input class="field-input" type="number" id="mean-lap-time" placeholder="0.000" step="0.001">
+            </div>
+
+            <div class="field">
+                <label class="field-label" for="per-lap-deg">Per-lap degradation <span class="field-unit">s/lap</span></label>
+                <input class="field-input" type="number" id="per-lap-deg" placeholder="0.000" step="0.001">
+            </div>
+        </div>
+
+        <div class="input-group">
+            <button id="simulate"> Run simulation</button>
+        </div>
+
+        <div style="margin-top: auto; display: flex; flex-direction: column; gap: 8px;">
+            <p class="copyright">
+                © 2026, Michel Gerding, licenced under
+                <a href="https://github.com/MichelGerding/Iracing-web-tools/blob/main/LICENSE">GPL3</a>
+            </p>
+        </div>
+    </aside>
+    <div class="content">
+    </div>
+</main>
+<script src="../../js/components/DropZone/dropzone.js"></script>
+<script src="https://unpkg.com/papaparse@5.4.1/papaparse.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/14.7.0/math.min.js"></script>
+<script src="https://cdn.plot.ly/plotly-2.30.0.min.js"></script>
+<script src="./js/maths.js"></script>
+<script src="./main.js"></script>
+</body>
+</html>
