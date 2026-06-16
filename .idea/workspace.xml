@@ -15,13 +15,9 @@
       <change afterPath="$PROJECT_DIR$/modules/ibt_converter/libs/telemetry_math/README.md" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/modules/ibt_converter/libs/telemetry_math/package.json" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/modules/ibt_converter/libs/telemetry_math/src/math.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/modules/strategy_solver/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/modules/strategy_solver/js/maths.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/modules/strategy_solver/main.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/modules/strategy_solver/styles.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/modules/ibt_converter/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/modules/ibt_converter/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/strategy_solver/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/modules/strategy_solver/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/strategy_solver/js/maths.js" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -93,7 +89,7 @@
       <option name="presentableId" value="Default" />
       <updated>1781561859294</updated>
       <workItem from="1781561861106" duration="6074000" />
-      <workItem from="1781604289414" duration="11803000" />
+      <workItem from="1781604289414" duration="12021000" />
     </task>
     <servers />
   </component>
