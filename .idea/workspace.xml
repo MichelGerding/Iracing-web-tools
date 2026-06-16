@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="e9bee13d-f474-4779-92bb-9ef910799fe2" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/modules/ibt_converter/libs/csv_writer/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/modules/ibt_converter/libs/csv_writer/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/modules/ibt_converter/libs/csv_writer/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/modules/ibt_converter/libs/csv_writer/src/writer.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/modules/ibt_converter/libs/ibt_parser/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/modules/ibt_converter/libs/ibt_parser/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/modules/ibt_converter/libs/ibt_parser/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/modules/ibt_converter/libs/ibt_parser/src/parse_yaml.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/modules/ibt_converter/libs/ibt_parser/src/parser.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/modules/ibt_converter/libs/telemetry_math/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/modules/ibt_converter/libs/telemetry_math/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/modules/ibt_converter/libs/telemetry_math/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/modules/ibt_converter/libs/telemetry_math/src/math.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/telem_tools.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/webResources.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/LICENSE" beforeDir="false" afterPath="$PROJECT_DIR$/LICENSE" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/ibt_converter/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/modules/ibt_converter/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/ibt_converter/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/modules/ibt_converter/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/ibt_converter/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/modules/ibt_converter/styles.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/js/components/DropZone/dropzone.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/js/components/DropZone/dropzone.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/js/components/ToolCard/toolcard.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/js/components/ToolCard/toolcard.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/ibt_converter" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/pace_visualizer/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/pace_visualizer/js/maths.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/pace_visualizer/main.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/pace_visualizer/styles.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/stylesheets/lib.css" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CopilotPersistence">
+    <persistenceIdMap>
+      <entry key="_/home/michel/Desktop/projects/iracing_telemetry_viewer/telem_tools" value="3FBwdf76Ym66QTirW2GcXPMQNbT" />
+    </persistenceIdMap>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="CSS File" />
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 6,
+  &quot;fromUser&quot;: false
+}</component>
+  <component name="ProjectId" id="3FBwdf76Ym66QTirW2GcXPMQNbT" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
+    &quot;codeWithMe.voiceChat.enabledByDefault&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;javascript.preferred.runtime.type.id&quot;: &quot;node&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/michel/Desktop/projects/iracing_telemetry_viewer/telem_tools&quot;,
+    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/modules/ibt_converter/libs" />
+    </key>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-js-predefined-d6986cc7102b-31caf2ab9e3c-JavaScript-WS-261.25134.101" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="e9bee13d-f474-4779-92bb-9ef910799fe2" name="Changes" comment="" />
+      <created>1781561859294</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1781561859294</updated>
+      <workItem from="1781561861106" duration="6074000" />
+      <workItem from="1781604289414" duration="5694000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>
