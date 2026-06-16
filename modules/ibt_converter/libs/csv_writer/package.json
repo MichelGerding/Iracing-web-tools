@@ -1,0 +1,9 @@
+{
+  "name": "@iracing-telemetry/csv-writer",
+  "version": "1.0.0",
+  "description": "CSV exporter for iRacing telemetry data",
+  "main": "writer.js",
+  "author": "Michel Gerding",
+  "license": "MIT"
+}
+

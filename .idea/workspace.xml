@@ -15,28 +15,12 @@
       <change afterPath="$PROJECT_DIR$/modules/ibt_converter/libs/telemetry_math/README.md" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/modules/ibt_converter/libs/telemetry_math/package.json" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/modules/ibt_converter/libs/telemetry_math/src/math.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/telem_tools.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/webResources.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/LICENSE" beforeDir="false" afterPath="$PROJECT_DIR$/LICENSE" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/ibt_converter/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/modules/ibt_converter/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/components/DropZone/dropzone.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/components/DropZone/dropzone.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/modules/ibt_converter/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/modules/ibt_converter/main.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/modules/ibt_converter/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/modules/ibt_converter/styles.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/js/components/DropZone/dropzone.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/js/components/DropZone/dropzone.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/js/components/ToolCard/toolcard.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/js/components/ToolCard/toolcard.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/modules/ibt_converter" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/modules/pace_visualizer/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/modules/pace_visualizer/js/maths.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/modules/pace_visualizer/main.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/modules/pace_visualizer/styles.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/stylesheets/lib.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/pace_visualizer/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/modules/pace_visualizer/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -107,7 +91,7 @@
       <option name="presentableId" value="Default" />
       <updated>1781561859294</updated>
       <workItem from="1781561861106" duration="6074000" />
-      <workItem from="1781604289414" duration="5694000" />
+      <workItem from="1781604289414" duration="6479000" />
     </task>
     <servers />
   </component>

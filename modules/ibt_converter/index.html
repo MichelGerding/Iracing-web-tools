@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IBT Extractor - iRacing Telemetry to CSV</title>
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <header>
+    <div>
+      <h1>IBT Extractor</h1>
+      <span>iRacing telemetry → CSV</span>
+    </div>
+  </header>
+
+  <main>
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <!-- File Input -->
+      <div>
+        <div class="section-label">Source file</div>
+        <div class="drop-zone" id="dropZone">
+          <input type="file" id="fileInput" accept=".ibt">
+          <div class="dz-icon">⬡</div>
+          <div class="dz-label">
+            <strong>Drop .ibt file here</strong><br>
+            or click to browse
+          </div>
+        </div>
+      </div>
+
+      <!-- Fixed Columns Info -->
+      <div>
+        <div class="section-label">Exported columns</div>
+        <div class="fixed-channels">
+          <div class="fixed-ch">
+            <span class="lock-icon">■</span>
+            <span class="ch-name">Lap</span>
+            <span class="ch-unit">lap #</span>
+          </div>
+          <div class="fixed-ch">
+            <span class="lock-icon">■</span>
+            <span class="ch-name">Throttle</span>
+            <span class="ch-unit">%</span>
+          </div>
+          <div class="fixed-ch">
+            <span class="lock-icon">■</span>
+            <span class="ch-name">Brake</span>
+            <span class="ch-unit">%</span>
+          </div>
+          <div class="fixed-ch">
+            <span class="lock-icon">■</span>
+            <span class="ch-name">SteeringWheelAngle</span>
+            <span class="ch-unit">Radians</span>
+          </div>
+          <div class="fixed-ch">
+            <span class="lock-icon">■</span>
+            <span class="ch-name">LatAccel</span>
+            <span class="ch-unit">m/s²</span>
+          </div>
+          <div class="fixed-ch">
+            <span class="lock-icon">■</span>
+            <span class="ch-name">LongAccel</span>
+            <span class="ch-unit">m/s²</span>
+          </div>
+          <div class="fixed-ch">
+            <span class="lock-icon">■</span>
+            <span class="ch-name">YawRate</span>
+            <span class="ch-unit">rad/s</span>
+          </div>
+          <div class="fixed-ch">
+            <span class="lock-icon">■</span>
+            <span class="ch-name">speed</span>
+            <span class="ch-unit">m/s</span>
+          </div>
+          <div class="fixed-ch">
+            <span class="lock-icon">■</span>
+            <span class="ch-name">LapCurrentLapTime</span>
+            <span class="ch-unit">s</span>
+          </div>
+          <div class="fixed-ch">
+            <span class="lock-icon">■</span>
+            <span class="ch-name">LapDistPct</span>
+            <span class="ch-unit">%</span>
+          </div>
+
+        </div>
+       </div>
+
+
+      <!-- Action Buttons -->
+      <div style="margin-top: auto; display: flex; flex-direction: column; gap: 8px;">
+        <button class="btn btn-primary" id="exportBtn" disabled>
+          Export CSV
+        </button>
+        <button class="btn btn-primary" id="exportFeaturesBtn" disabled style="opacity: 0.7;">
+          Export Features (CSV)
+        </button>
+        <button class="btn btn-ghost" id="clearBtn">
+          Clear
+        </button>
+        <p class="cprght">
+          © 2026, Michel Gerding, licenced under
+          <a href="https://github.com/MichelGerding/Iracing-web-tools/blob/main/LICENSE">GPL3</a>,
+          ibt parser inspired by
+          <a href="https://github.com/SkippyZA/ibt-telemetry">ibt-telemetry</a>
+        </p>
+      </div>
+
+    </aside>
+
+    <!-- Content Area -->
+    <div class="content">
+      <!-- Status Bar -->
+      <div class="status-bar idle" id="statusBar">
+        <div class="status-dot"></div>
+        <span id="statusText">No file loaded</span>
+      </div>
+
+      <!-- Metadata Section -->
+      <div id="metaSection" style="display: none;">
+        <div class="section-label" style="margin-bottom: 0.75rem;">
+          Session metadata
+        </div>
+        <div class="meta-grid" id="metaGrid"></div>
+      </div>
+
+      <!-- Preview Section -->
+      <div id="previewSection" style="display: none;">
+        <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 0.6rem;">
+          <div class="section-label" style="margin-bottom: 0;">
+            Data preview
+          </div>
+          <span id="sampleCount" style="font-size: 0.72rem; color: var(--text-dim);"></span>
+        </div>
+        <div class="preview-table-wrap" id="previewTableWrap"></div>
+        <div class="preview-note" id="previewNote"></div>
+      </div>
+
+      <!-- Empty State -->
+      <div id="emptyState" class="empty-state">
+        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2">
+          <path d="M13 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"/>
+          <polyline points="13 2 13 9 20 9"/>
+          <line x1="9" y1="13" x2="15" y2="13"/>
+          <line x1="9" y1="17" x2="15" y2="17"/>
+        </svg>
+        <span>Drop an .ibt file to get started</span>
+      </div>
+
+      <!-- Progress Bar -->
+      <div id="progressSection" style="display: none;">
+        <div class="progress-bar-wrap">
+          <div class="progress-bar" id="progressBar" style="width: 0%"></div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <script src="/iracing-web-tools/modules/ibt_converter/libs/ibt_parser/src/parse_yaml.js"></script>
+  <script src="/iracing-web-tools/modules/ibt_converter/libs/ibt_parser/src/parser.js"></script>
+  <script src="./libs/csv_writer/src/writer.js"></script>
+  <script src="./libs/telemetry_math/src/math.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>

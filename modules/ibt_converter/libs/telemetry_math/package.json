@@ -1,0 +1,9 @@
+{
+  "name": "@iracing-telemetry/telemetry-math",
+  "version": "1.0.0",
+  "description": "Mathematics and statistics module for iRacing telemetry analysis",
+  "main": "src/math.js",
+  "author": "Michel Gerding",
+  "license": "MIT"
+}
+
