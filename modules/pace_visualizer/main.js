@@ -24,6 +24,7 @@ const PC = { displayModeBar: false, responsive: true };
 
 let files = [];
 let combineFiles = false;
+let zeroLaps = true;
 let filterMode = "fully"; // fully | clean | no-pits | all
 
 /* ── Helpers ─────────────────────────────────────────────── */
@@ -75,11 +76,13 @@ function filterLaps(file) {
     return laps;
 }
 
-function regressLapTimes(file) {
+function regressLapTimes(file, zeroLaps) {
     const laps = filterLaps(file);
     if (!laps || !laps.length) return;
 
-    const x = laps.map(l => l["Lap"]);
+    const firstLapNum = zeroLaps ? Math.min(...laps.map(l => l["Lap"])) : 0;
+
+    const x = laps.map(l => l["Lap"] - firstLapNum);
     const y = laps.map(l => l["Lap time"]);
 
     return [polyfit2(x, y), x, y];
@@ -162,7 +165,7 @@ function render() {
         const col = FILE_COLORS[file.colorIdx % FILE_COLORS.length];
         if (file.rows.length === 0) return;
 
-        const res = regressLapTimes(file);
+        const res = regressLapTimes(file, zeroLaps);
         if (!res) return;
         const [coeffs, x, y] = res;
 
@@ -259,7 +262,7 @@ function renderStats() {
         let combinedY = [];
 
         files.forEach(file => {
-            const res = regressLapTimes(file);
+            const res = regressLapTimes(file, zeroLaps);
             if (res) {
                 combinedX.push(...res[1]);
                 combinedY.push(...res[2]);
@@ -365,6 +368,14 @@ document.querySelectorAll(".combine-files-toggle").forEach(btn => {
     })
 })
 
+document.querySelectorAll(".zero-laps-toggle").forEach(btn => {
+    btn.addEventListener("click", () => {
+        btn.classList.toggle("active");
+        zeroLaps = btn.classList.contains("active");
+        render();
+    })
+})
+
 /* ── Tabs ────────────────────────────────────────────────── */
 document.querySelectorAll(".tab-btn").forEach(btn => {
     btn.addEventListener("click", () => {
@@ -381,8 +392,8 @@ document.querySelector("drop-zone")
     .addEventListener("file-selected", async (e) => {
         const incoming = Array.from(e.detail.files);
         for (const file of incoming) {
-            // Skip duplicates by name
-            if (files.find(f => f.name === file.name)) continue;
+            // // Skip duplicates by name
+            // if (files.find(f => f.name === file.name)) continue;
 
             const text = await file.text();
             const rows = parseCSV(text);

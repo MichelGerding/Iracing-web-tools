@@ -116,6 +116,29 @@
     color: var(--accent);
 }
 
+.zero-laps-toggle {
+    background: none;
+    border: none;
+    border-radius: calc(var(--radius-md) - 2px);
+    color: var(--text-muted);
+    cursor: pointer;
+    flex: 1;
+    font-family: var(--sans);
+    font-size: 0.72rem;
+    font-weight: 500;
+    letter-spacing: 0.03em;
+    padding: 5px 6px;
+    text-align: center;
+    transition: all var(--t);
+}
+
+.zero-laps-toggle:hover { color: var(--text); }
+.zero-laps-toggle.active {
+    background: var(--surface3);
+    border: 1px solid var(--border-hi);
+    color: var(--accent);
+}
+
 /* ── STATS STRIP ─────────────────────────────────────────── */
 
 .stats-strip {

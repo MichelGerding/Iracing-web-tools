@@ -16,11 +16,11 @@
       <change afterPath="$PROJECT_DIR$/modules/ibt_converter/libs/telemetry_math/package.json" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/modules/ibt_converter/libs/telemetry_math/src/math.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/components/DropZone/dropzone.css" beforeDir="false" afterPath="$PROJECT_DIR$/js/components/DropZone/dropzone.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/components/DropZone/dropzone.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/components/DropZone/dropzone.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/modules/ibt_converter/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/modules/ibt_converter/main.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/modules/ibt_converter/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/modules/ibt_converter/styles.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/modules/pace_visualizer/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/modules/pace_visualizer/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/pace_visualizer/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/modules/pace_visualizer/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/pace_visualizer/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/modules/pace_visualizer/styles.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -91,7 +91,7 @@
       <option name="presentableId" value="Default" />
       <updated>1781561859294</updated>
       <workItem from="1781561861106" duration="6074000" />
-      <workItem from="1781604289414" duration="7096000" />
+      <workItem from="1781604289414" duration="7994000" />
     </task>
     <servers />
   </component>
