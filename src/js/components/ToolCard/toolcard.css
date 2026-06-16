@@ -1,0 +1,24 @@
+.tool-card {
+    border: 1.5px dashed var(--border);
+    border-radius: 10px;
+    padding: 2rem 1rem;
+    text-align: center;
+    cursor: pointer;
+    transition: border-color 0.15s, background 0.15s;
+    background: var(--surface);
+}
+
+.tool-card:hover,
+.tool-card.drag-over {
+    border-color: var(--accent);
+    background: rgba(232, 255, 71, 0.04);
+}
+
+.tool-card a {
+    text-decoration: none;
+    color: var(--text);
+}
+
+.tool-card .tool-name {
+    color: var(--accent);
+}

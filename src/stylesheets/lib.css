@@ -1,0 +1,232 @@
+/* ============================================================
+   iRacing Tools — Component Library  (lib.css)
+   Import after styles.css to get all reusable components.
+   ============================================================ */
+
+/* ── TOKENS ─────────────────────────────────────────────── */
+
+:root {
+    /* Colors */
+    --bg: #0e0e10;
+    --surface: #18181b;
+    --surface2: #222226;
+    --surface3: #2a2a2f;
+    --border: #2e2e34;
+    --border-hi: #44444c;
+    --accent: #e8ff47;
+    --accent-dim: #b8cc30;
+    --accent-muted: rgba(232, 255, 71, 0.12);
+    --text: #f0f0f0;
+    --text-muted: #888;
+    --text-dim: #555;
+    --red: #ff4f4f;
+    --red-bg: rgba(255, 79, 79, 0.08);
+    --green: #4fff91;
+    --green-bg: rgba(79, 255, 145, 0.08);
+    --blue: #4fb8ff;
+    --blue-bg: rgba(79, 184, 255, 0.08);
+    --orange: #ffaa4f;
+    --orange-bg: rgba(255, 170, 79, 0.08);
+
+    /* Typography */
+    --mono: 'JetBrains Mono', 'Fira Mono', 'Courier New', monospace;
+    --sans: 'Inter', system-ui, sans-serif;
+
+    /* Spacing */
+    --space-1: 0.25rem;
+    --space-2: 0.5rem;
+    --space-3: 0.75rem;
+    --space-4: 1rem;
+    --space-5: 1.25rem;
+    --space-6: 1.5rem;
+    --space-8: 2rem;
+
+    /* Radii */
+    --radius-sm: 5px;
+    --radius-md: 8px;
+    --radius-lg: 12px;
+
+    /* Transitions */
+    --t: 0.12s ease;
+}
+
+/* ── RESET ──────────────────────────────────────────────── */
+
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: var(--sans);
+    min-height: 100vh;
+    line-height: 1.5;
+}
+
+/* ── SCROLLBAR ──────────────────────────────────────────── */
+
+::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+}
+
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--border);
+    border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--border-hi);
+}
+
+/* ── TYPOGRAPHY ─────────────────────────────────────────── */
+
+.text-xs {
+    font-size: 0.68rem;
+}
+
+.text-sm {
+    font-size: 0.78rem;
+}
+
+.text-base {
+    font-size: 0.88rem;
+}
+
+.text-lg {
+    font-size: 1rem;
+}
+
+.text-xl {
+    font-size: 1.15rem;
+}
+
+.text-2xl {
+    font-size: 1.4rem;
+}
+
+.text-accent {
+    color: var(--accent);
+}
+
+.text-muted {
+    color: var(--text-muted);
+}
+
+.text-dim {
+    color: var(--text-dim);
+}
+
+.text-red {
+    color: var(--red);
+}
+
+.text-green {
+    color: var(--green);
+}
+
+.text-blue {
+    color: var(--blue);
+}
+
+.text-orange {
+    color: var(--orange);
+}
+
+.mono {
+    font-family: var(--mono);
+}
+
+.label {
+    font-size: 0.68rem;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--text-dim);
+}
+
+header {
+    padding: 1.5rem 2rem 1rem;
+    border-bottom: 1px solid var(--border);
+    display: flex;
+    align-items: baseline;
+    gap: 1rem;
+}
+
+header h1 {
+    font-size: 1.15rem;
+    font-weight: 600;
+    letter-spacing: 0.04em;
+    color: var(--accent);
+    text-transform: uppercase;
+}
+
+header span {
+    font-size: 0.78rem;
+    color: var(--text-muted);
+    letter-spacing: 0.03em;
+}
+
+main {
+    flex: 1;
+    display: grid;
+    grid-template-columns: 290px 1fr;
+    height: calc(100vh - 57px);
+}
+
+.sidebar {
+    border-right: 1px solid var(--border);
+    padding: 1.5rem 1.25rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    overflow-y: auto;
+}
+
+.content {
+    padding: 1.5rem 2rem;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+
+.copyright {
+    color: var(--text);
+    font-size: 0.7rem;
+    text-align: center;
+    padding: 10px;
+}
+
+.copyright a {
+    color: var(--accent);
+    text-decoration: none;
+    font-weight: 500;
+}
+
+
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--border);
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #444;
+}

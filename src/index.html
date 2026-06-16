@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>iRacing Tools</title>
+  <link rel="stylesheet" href="stylesheets/lib.css">
+</head>
+<body>
+
+  <header>
+    <div>
+      <h1>Iracing Telemetry tools</h1>
+      <span>A collection of tools to work with iracing telemetry localy in the browser</span>
+    </div>
+  </header>
+
+  <main style="padding: 2rem; max-width: 960px; margin: 0 auto;">
+    <div id="tool-grid" style="display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 14px;">
+      <tool-card
+        name="IBT Converter"
+        description="Parse .ibt telemetry files and export channels to Garage 61 compatable CSV."
+        href="/modules/ibt_converter"
+        badge="ready"
+      ></tool-card>
+
+      <tool-card
+        name="Pace visualizer"
+        description="Visualize your tire deg and pace progression over a stint"
+        href="/modules/pace_visualizer"
+        badge="ready"
+      ></tool-card>
+    </div>
+  </main>
+
+    <script src="js/components/ToolCard/toolcard.js"></script>
+</body>
+</html>
