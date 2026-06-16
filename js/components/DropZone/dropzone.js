@@ -4,9 +4,9 @@ class DropZone extends HTMLElement {
     this.attachShadow({ mode: "open" });
 
     this.shadowRoot.innerHTML = `
-      <link rel="stylesheet" href="/iracing-web-tools/js/components/DropZone/dropzone.css">
+      <link rel="stylesheet" href="../../../js/components/DropZone/dropzone.css">
       <div class="drop-zone" id="zone">
-        <input type="file" id="input" multiple="true"/>
+        <input type="file" id="input" multiple="multiple"/>
         <div class="dz-icon" id="icon">⬡</div>
         <div class="dz-label">
           <strong id="title">Drop file here</strong><br>
