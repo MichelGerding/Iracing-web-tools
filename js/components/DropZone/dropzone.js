@@ -4,6 +4,7 @@ class DropZone extends HTMLElement {
     this.attachShadow({ mode: "open" });
 
     this.shadowRoot.innerHTML = `
+      <link rel="stylesheet" href="../../js/components/DropZone/dropzone.css">
       <div class="drop-zone" id="zone">
         <input type="file" id="input" multiple="multiple"/>
         <div class="dz-icon" id="icon">⬡</div>
